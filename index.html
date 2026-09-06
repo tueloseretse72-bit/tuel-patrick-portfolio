@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuel Patrick Seretse | Academic Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    line-height: 1.8;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #003366 0%, #00509e 100%);
+    color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.3em;
+    opacity: 0.9;
+}
+
+nav {
+    background: #00509e;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+    opacity: 0.7;
+    border-bottom: 2px solid white;
+}
+
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #003366;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #00509e;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #00509e;
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.05em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+li {
+    background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+    padding: 15px 20px;
+    border-left: 4px solid #00509e;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 80, 158, 0.2);
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.contact-info p {
+    background: #f0f4f8;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #00509e;
+}
+
+.contact-info strong {
+    color: #003366;
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer {
+    background: linear-gradient(135deg, #003366 0%, #00509e 100%);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    box-shadow: 0 -4px 12px rgba(0, 51, 102, 0.3);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #00509e;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5em;
+    box-shadow: 0 4px 12px rgba(0, 80, 158, 0.4);
+    transition: background 0.3s ease;
+    z-index: 99;
+}
+
+.back-to-top:hover {
+    background: #003366;
+}
+
+.back-to-top.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+    
+    nav a {
+        margin: 0 10px;
+        font-size: 0.9em;
+    }
+    
+    section {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Tuel Patrick Seretse</h1>
+    <p>Bachelor of Arts in Environmental Management Student</p>
+</header>
+
+<nav>
+    <a href="#profile">Profile</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="profile">
+<h2>Academic Profile</h2>
+<p>
+I am <strong>Tuel Patrick Seretse</strong>, an Environmental Management student
+at the University of South Africa (UNISA). My academic interests include
+environmental conservation, sustainable development, and community engagement.
+I am committed to continuous learning and professional development while
+building practical experience in education and environmental studies.
+</p>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+
+<h3>University of South Africa (UNISA)</h3>
+<p>
+<strong>Bachelor of Arts in Environmental Management</strong> (NQF Level 7)<br>
+Currently enrolled (2025–2028)
+</p>
+
+<h3>Tswelopele TVET Campus</h3>
+<p>
+<strong>National Certificate (N1)</strong> in Computer Systems
+</p>
+
+<h3>Tswelopele Secondary School</h3>
+<p>
+<strong>National Senior Certificate</strong> (Grade 12)
+</p>
+</section>
+
+<section id="experience">
+<h2>Professional Experience</h2>
+
+<h3>Tutor / Assistant Teacher</h3>
+<p>
+<strong>Tswelopele Secondary School</strong> (2024–2025)<br>
+Providing academic support and tutoring services to students in various subjects.
+</p>
+
+<h3>Assistant in Plumbing and Building</h3>
+<p>
+<strong>Worked under Lebogang Sehularo</strong> (2019–2021)<br>
+Gained practical experience in plumbing and building construction projects.
+</p>
+</section>
+
+<section id="skills">
+<h2>Core Skills</h2>
+<ul>
+<li>Environmental Management</li>
+<li>Problem Solving</li>
+<li>Computer Literacy</li>
+<li>Teaching and Tutoring</li>
+<li>Communication</li>
+<li>Teamwork</li>
+<li>Research Skills</li>
+<li>Critical Thinking</li>
+</ul>
+</section>
+
+<section id="contact">
+<h2>Contact Information</h2>
+<div class="contact-info">
+    <p>
+        <strong>📧 Email</strong><br>
+        <a href="mailto:tueloseretse72@gmail.com" style="color: #00509e; text-decoration: none;">
+            tueloseretse72@gmail.com
+        </a>
+    </p>
+    <p>
+        <strong>📱 Phone</strong><br>
+        <a href="tel:+27634280732" style="color: #00509e; text-decoration: none;">
+            063 428 0732
+        </a>
+    </p>
+    <p>
+        <strong>📍 Location</strong><br>
+        Northern Cape, South Africa
+    </p>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2025 Tuel Patrick Seretse | Academic Portfolio</p>
+<p>Designed with dedication to showcase academic achievements and professional growth</p>
+</footer>
+
+<button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+<script>
+window.addEventListener('scroll', function() {
+    const backToTopBtn = document.querySelector('.back-to-top');
+    if (window.scrollY > 300) {
+        backToTopBtn.classList.add('show');
+    } else {
+        backToTopBtn.classList.remove('show');
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+</script>
+
+</body>
+</html>
